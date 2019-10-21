@@ -6,7 +6,7 @@
 import sys
 
 import pygame
-
+from pygame.tests.test_utils import png
 
 pygame.init()   # Pygame is initialised, all its functions are now usable.
 screen = pygame.display.set_mode((400, 400))    # Sets the size of the screen.
@@ -38,5 +38,6 @@ while True:
     addImage()
     entityColourChanger(screen)
     pygame.display.flip()
+    pygame.image.save(screen, png)
 
 pygame.quit()
