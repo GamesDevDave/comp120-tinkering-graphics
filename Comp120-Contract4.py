@@ -38,6 +38,6 @@ while True:
     addImage()
     entityColourChanger(screen)
     pygame.display.flip()
-    pygame.image.save(screen, png)
+    pygame.image.save(screen, 'newImage.png')
 
 pygame.quit()
