@@ -16,13 +16,13 @@ pygame.display.set_caption("Contract-4-Program")
 
 
 # This loads in the original image and ensures that it is casted onto the screen.
-def addImage():
+def AddImage():
     entity = pygame.image.load("Ground.png").convert()
     screen.blit(entity, (0, 0))
 
 
-# This function changes the colour of the image depending on the values on line 33.
-def entityColourChanger(surface=pygame.Surface((1, 1))):
+# This function changes the colour of pixels depending on the values on line 33.
+def EntityColourChanger(surface=pygame.Surface((1, 1))):
     pixel = pygame.Color(0, 0, 0)
     for x in range(surface.get_width()):
         for y in range(surface.get_height()):
@@ -42,8 +42,8 @@ while True:
     # This calls the functions needed to change the colour of the asset and saves the picture.
 
     screen.fill((255, 255, 255))
-    addImage()
-    entityColourChanger(screen)
+    AddImage()
+    EntityColourChanger(screen)
     pygame.display.flip()
     pygame.image.save(screen, 'newImage.png')
 
