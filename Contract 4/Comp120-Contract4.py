@@ -4,9 +4,8 @@
 
 # Pygame and sys are imported for further use in the program.
 import sys
-
 import pygame
-from pygame.tests.test_utils import png
+
 
 # Pygame is initialised, all its functions are now usable.
 pygame.init()
@@ -30,8 +29,9 @@ def entityColourChanger(surface=pygame.Surface((1, 1))):
             pixel = surface.get_at((x, y))
             surface.set_at(
                 (x, y),
-                pygame.Color(int(pixel.r), int(pixel.g * 0.1), int(pixel.b))
+                pygame.Color(int(pixel.r * 0.1), int(pixel.g * 0.1), int(pixel.b))
             )
+
 
 # Main game loop, continues until the user presses the exit button.
 while True:
@@ -39,7 +39,7 @@ while True:
         if event.type == pygame.QUIT:
             sys.exit()
 
-# This calls the functions needed to change the colour of the asset and saves the picture.
+    # This calls the functions needed to change the colour of the asset and saves the picture.
 
     screen.fill((255, 255, 255))
     addImage()
