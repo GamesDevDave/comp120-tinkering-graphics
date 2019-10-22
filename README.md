@@ -4,6 +4,9 @@ Python Code for Re-purposing Graphics Algorithms
 Repo Link: https://github.com/GamesDevDave/comp120-tinkering-graphics
 
 ## Brief Description + Requirements.
+### Contract 2 - Ludovico Bitti
+
+
 ### Contract 4 - David Brown 
 I will be working on contract number 4 which is a Platformer Entity Reskinner, the main things that is required
 for this program is to reskin different assets. The colour of these are to be changed. There are supposed to be four
