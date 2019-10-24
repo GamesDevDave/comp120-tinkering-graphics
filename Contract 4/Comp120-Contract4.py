@@ -6,8 +6,11 @@ Last Updated: 21/10/2019.
 """Pygame and sys are imported for further use in the program."""
 
 import sys
-
 import pygame
+<<<<<<< HEAD:Comp120-Contract4.py
+=======
+
+>>>>>>> 9fc330f70a15c6d29e91d619726bd1818a1fc5dc:Contract 4/Comp120-Contract4.py
 
 """Sets the size of the screen."""
 screen = pygame.display.set_mode((400, 400))
@@ -17,32 +20,52 @@ pygame.display.set_caption("Contract-4-Program")
 """This loads in the original image and ensures that it is casted onto the screen."""
 
 
+<<<<<<< HEAD:Comp120-Contract4.py
+=======
+# This loads in the original image and ensures that it is casted onto the screen.
+>>>>>>> 9fc330f70a15c6d29e91d619726bd1818a1fc5dc:Contract 4/Comp120-Contract4.py
 def add_image():
     entity = pygame.image.load("Ground.png").convert()
     screen.blit(entity, (0, 0))
 
 
+<<<<<<< HEAD:Comp120-Contract4.py
 """This function changes the colour of the image depending on the values on line 33."""
 
 
 def entity_colour_changer(surface=pygame.Surface((1, 1))):
+=======
+# This function changes the colour of pixels depending on the values on line 33.
+def entity_colour_changer(surface=pygame.Surface((1, 1))):
+    pixel = pygame.Color(0, 0, 0)
+>>>>>>> 9fc330f70a15c6d29e91d619726bd1818a1fc5dc:Contract 4/Comp120-Contract4.py
     for x in range(surface.get_width()):
         for y in range(surface.get_height()):
             pixel = surface.get_at((x, y))
             surface.set_at(
                 (x, y),
-                pygame.Color(int(pixel.r), int(pixel.g * 0.1), int(pixel.b))
+                pygame.Color(int(pixel.r * 2), int(pixel.g * 0.1), int(pixel.b))
             )
 
 
+<<<<<<< HEAD:Comp120-Contract4.py
 """Main game loop, continues until the user presses the exit button."""
+=======
+# Main game loop, continues until the user presses the exit button.
+>>>>>>> 9fc330f70a15c6d29e91d619726bd1818a1fc5dc:Contract 4/Comp120-Contract4.py
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             sys.exit()
 
+<<<<<<< HEAD:Comp120-Contract4.py
     """This calls the functions needed to change the colour of the asset and saves the picture."""
 
+=======
+    # This calls the functions needed to change the colour of the asset and saves the picture.
+
+    screen.fill((255, 255, 255))
+>>>>>>> 9fc330f70a15c6d29e91d619726bd1818a1fc5dc:Contract 4/Comp120-Contract4.py
     add_image()
     entity_colour_changer(screen)
     pygame.display.flip()
