@@ -21,7 +21,9 @@ def add_image():
     screen.blit(entity, (0, 0))
 
 
-"""This function changes the colour of the image depending on the values on line 33."""
+"""This function changes the colour of the image depending on the values on line 33.
+https://youtu.be/XE47muJAnXs?t=1 used to help.
+"""
 
 
 def entity_colour_changer(surface=pygame.Surface((1, 1))):
